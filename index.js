@@ -123,7 +123,12 @@ function putLetter(letter){
             gameStatus.textContent = "GAME OVER";
             gameStatus.style.display = "block";
 
-            correctWord.textContent = "corect word: " + word;
+            if(category == characters){
+                correctWord.textContent = "corect word: " + word.charAt(0).toUpperCase() + word.slice(1);
+            }
+            else{
+                correctWord.textContent = "corect word: " + word;
+            }
             correctWord.style.display = "block";
         }
 
@@ -205,4 +210,3 @@ function setGame(){
 }
 
 setGame();
-
