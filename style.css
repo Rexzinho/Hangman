@@ -89,10 +89,10 @@ body{
 }
 .correct{
     background-color: yellowgreen;
+    cursor: auto;
 }
 #correctWord{
     text-align: center;
     display:none;
     margin-bottom:0;
-    cursor: auto;
 }
